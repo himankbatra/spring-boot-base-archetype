@@ -7,24 +7,61 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>src/main/java</directory>
+            <directory>backend/api/src/main/java</directory>
             <includes>
                 <include>**/*.java</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>src/main/resources</directory>
+            <directory>backend/api/src/main/resources</directory>
             <includes>
                 <include>**/*.xml</include>
                 <include>**/*.properties</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>src/test/java</directory>
+            <directory>backend/api/src/test/java</directory>
             <includes>
                 <include>**/*.java</include>
             </includes>
         </fileSet>
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>backend/api</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+
+
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>backend/core/src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+            <directory>backend/core/src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>backend/core</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>backend</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+
         <fileSet filtered="false" encoding="UTF-8">
             <directory>.mvn/wrapper</directory>
             <includes>
@@ -32,12 +69,43 @@
                 <include>**/*.properties</include>
             </includes>
         </fileSet>
+
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>.github/workflows</directory>
+            <includes>
+                <include>**/*.yml</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>.github</directory>
+            <includes>
+                <include>**/*.md</include>
+            </includes>
+        </fileSet>
+
+
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>docs</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="false" encoding="UTF-8">
+            <directory>frontend</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+
         <fileSet filtered="false" encoding="UTF-8">
             <directory></directory>
             <includes>
                 <include>mvnw.cmd</include>
                 <include>mvnw</include>
                 <include>.gitignore</include>
+                <include>pom.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
