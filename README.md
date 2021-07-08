@@ -1,4 +1,4 @@
-# spring-boot-java-basic-archetype
+# spring-boot-base-archetype
 
 ## How to use?
 
@@ -25,6 +25,10 @@ mvn archetype:generate \
     -Dversion=1.0-SNAPSHOT \
     -Dpackage=com.mycompany.myapp
 ```
+$ tree
+
+![img.png](images/img.png)
+
 
 
 ## Developer Notes
