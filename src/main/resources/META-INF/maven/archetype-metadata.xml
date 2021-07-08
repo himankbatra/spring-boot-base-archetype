@@ -2,66 +2,55 @@
 <archetype-descriptor
         xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
         http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-        name="spring-boot-java-basic"
+        name="${artifactId}"
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modules>
+
+        <module id="backend" dir="backend" name="backend">
+
+<modules>
+    <module id="api" dir="api" name="api">
+
+        <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                <directory>src/main/java</directory>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/resources</directory>
+            </fileSet>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                <directory>src/test/java</directory>
+            </fileSet>
+        </fileSets>
+
+    </module>
+
+    <module id="core" dir="core" name="core">
+
+        <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                <directory>src/main/java</directory>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+                <directory>src/main/resources</directory>
+            </fileSet>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                <directory>src/test/java</directory>
+            </fileSet>
+        </fileSets>
+
+    </module>
+
+</modules>
+        </module>
+
+        <module id="frontend" dir="frontend" name="frontend">
+
+        </module>
+
+    </modules>
     <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>backend/api/src/main/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
-            <directory>backend/api/src/main/resources</directory>
-            <includes>
-                <include>**/*.xml</include>
-                <include>**/*.properties</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>backend/api/src/test/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="false" encoding="UTF-8">
-            <directory>backend/api</directory>
-            <includes>
-                <include>pom.xml</include>
-            </includes>
-        </fileSet>
-
-
-
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>backend/core/src/main/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
-
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-            <directory>backend/core/src/test/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
-        <fileSet filtered="false" encoding="UTF-8">
-            <directory>backend/core</directory>
-            <includes>
-                <include>pom.xml</include>
-            </includes>
-        </fileSet>
-
-        <fileSet filtered="false" encoding="UTF-8">
-            <directory>backend</directory>
-            <includes>
-                <include>pom.xml</include>
-            </includes>
-        </fileSet>
-
-
         <fileSet filtered="false" encoding="UTF-8">
             <directory>.mvn/wrapper</directory>
             <includes>
@@ -86,18 +75,7 @@
 
         <fileSet filtered="false" encoding="UTF-8">
             <directory>docs</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
         </fileSet>
-
-        <fileSet filtered="false" encoding="UTF-8">
-            <directory>frontend</directory>
-            <includes>
-                <include>**/*</include>
-            </includes>
-        </fileSet>
-
 
         <fileSet filtered="false" encoding="UTF-8">
             <directory></directory>
@@ -105,7 +83,6 @@
                 <include>mvnw.cmd</include>
                 <include>mvnw</include>
                 <include>.gitignore</include>
-                <include>pom.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">

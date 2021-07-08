@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.entity;
+package ${package}.core.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

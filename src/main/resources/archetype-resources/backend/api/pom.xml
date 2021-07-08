@@ -9,12 +9,11 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>${groupId}</groupId>
-	<artifactId>${artifactId}</artifactId>
+	<artifactId>api</artifactId>
 	<version>${version}</version>
 	<packaging>jar</packaging>
 
-	<name>${artifactId}</name>
+	<name>api</name>
 	<description>Spring Boot Backend Api Base Project</description>
 
 
@@ -22,7 +21,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -42,7 +40,7 @@
 
 		<dependency>
 			<groupId>${groupId}</groupId>
-			<artifactId>${artifactId}-core</artifactId>
+			<artifactId>core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -63,6 +61,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring.boot.version}</version>
 				<executions>
 					<execution>
 						<goals>

@@ -1,9 +1,9 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.repositories;
+package ${package}.core.repositories;
 
-import ${package}.domain.User;
+import ${package}.core.domain.User;
 import org.springframework.stereotype.Repository;
 
 @Repository

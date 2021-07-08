@@ -1,10 +1,10 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${package}.services;
+package ${package}.core.services;
 
-import ${package}.domain.User;
-import ${package}.repositories.UserRepository;
+import ${package}.core.domain.User;
+import ${package}.core.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
